@@ -1,0 +1,107 @@
+var f = function (a) {return a * 2}
+undefined
+f(2)
+4
+var g = (a) => { return a * 2; }
+undefined
+g(3)
+6
+console.log('Hello')
+VM282:1 Hello
+undefined
+h = a => a * 2
+a => a * 2
+h(9)
+18
+var arr = new Array('körte', 'alma', 'banán')
+undefined
+ARR
+VM464:1 Uncaught ReferenceError: ARR is not defined(…)(anonymous function) @ VM464:1
+arr
+["körte", "alma", "banán"]
+arr.length
+3
+arr.push("eper", "ananász")
+5
+arr
+["körte", "alma", "banán", "eper", "ananász"]
+arr.pop("körte");
+"ananász"
+arr
+["körte", "alma", "banán", "eper"]
+arr.push("kiwi")
+5
+arr.filter(item = > item.length == 4)
+VM762:1 Uncaught SyntaxError: Unexpected token >
+arr.filter(item => item.length == 4)
+["alma", "eper", "kiwi"]
+var input = '2'
+undefined
+input
+"2"
+2 == input
+true
+2 === input
+false
+var a = [2,4,5,7,8,10]
+undefined
+a
+[2, 4, 5, 7, 8, 10]
+a.map(x => x * 3)
+[6, 12, 15, 21, 24, 30]
+a
+[2, 4, 5, 7, 8, 10]
+a.map(x => x * 3).filter( x => x > 6)
+[12, 15, 21, 24, 30]
+a.forEach(elem => console.log(elem))
+VM1013:1 2
+VM1013:1 4
+VM1013:1 5
+VM1013:1 7
+VM1013:1 8
+VM1013:1 10
+undefined
+a.reduce((x,y) => x + y, 0)
+36
+var obj = {}
+undefined
+o
+VM1107:1 Uncaught ReferenceError: o is not defined(…)(anonymous function) @ VM1107:1
+obj
+Object {}
+var person = { name: 'Béla', age: 12 }
+undefined
+person
+Object {name: "Béla", age: 12}
+person.age
+12
+person['age'
+VM1265:1 Uncaught SyntaxError: Unexpected end of input
+person['age']
+12
+person.age = 70
+70
+person['age']
+70
+person.dogName = "Buksi"
+"Buksi"
+person
+Object {name: "Béla", age: 70, dogName: "Buksi"}
+delete person.age
+true
+person
+Object {name: "Béla", dogName: "Buksi"}
+person.sayHi = (() => console.log('Hi');
+VM1487:1 Uncaught SyntaxError: Unexpected token ;
+person.sayHi = () => console.log('Hi');
+() => console.log('Hi')
+person.sayHi()
+VM1488:1 Hi
+undefined
+person.sayHi = function () { console.log('Hi, i am ' + this.name)};
+() { console.log('Hi, i am ' + this.name)}
+peson.sayHi()
+VM1579:1 Uncaught ReferenceError: peson is not defined(…)(anonymous function) @ VM1579:1
+person.sayHi()
+undefined
+VM1560:1 Hi, i am Béla

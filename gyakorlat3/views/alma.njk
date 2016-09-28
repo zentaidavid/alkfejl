@@ -1,0 +1,9 @@
+{% extends 'master.njk' %}
+
+{% block content %}
+<div>Te {{ appleCount }} almát kértél </div>
+<form action="/alma" method="post">
+    <input type="text" name="appleCount" placeholder="Hány almát kérsz?">
+    <button type="submit">Küldés</button>
+</form>
+{% endblock %}

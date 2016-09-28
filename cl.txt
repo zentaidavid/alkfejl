@@ -1,0 +1,69 @@
+febuabi@inf.elte.hu
+
+D:\Documents\alkfejl>git clone https://github.com/zentaidavid/elte-alkfejl.git
+Cloning into 'elte-alkfejl'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+D:\Documents\alkfejl>git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+D:\Documents\alkfejl>cd elte-alkfejl
+
+D:\Documents\alkfejl\elte-alkfejl>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+        me.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\Documents\alkfejl\elte-alkfejl>git add .
+
+D:\Documents\alkfejl\elte-alkfejl>git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+        new file:   me.html
+
+
+D:\Documents\alkfejl\elte-alkfejl>git commit -m "first commit"
+[master a09640f] first commit
+ Committer: Dávid Zentai <Dávid Zentai>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 64 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 me.html
+
+Warning: Your console font probably doesn't support Unicode. If you experience strange characters in the output, consider switching to a TrueType
+ font such as Consolas!
+
+D:\Documents\alkfejl\elte-alkfejl>git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.31 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/zentaidavid/elte-alkfejl.git
+   19beb78..a09640f  master -> master
+
+D:\Documents\alkfejl\elte-alkfejl>
